@@ -1,0 +1,1 @@
+http://localhost:3000/d/GlXkUBGiz/kubernetes-pod-overview?orgId=1&refresh=5s&var-namespace=kube-system&var-pod=kube-dns-6c699b5445-bxmv6&var-container=All

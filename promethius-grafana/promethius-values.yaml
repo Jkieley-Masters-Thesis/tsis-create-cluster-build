@@ -1,0 +1,51 @@
+kube-state-metrics:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 200Mi
+    requests:
+      cpu: 10m
+      memory: 50Mi
+
+nodeExporter:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 200Mi
+    requests:
+      cpu: 10m
+      memory: 20Mi
+
+alertmanager:
+  persistentVolume:
+    enabled: false
+  alertmanagerSpec:
+    resources:
+      limits:
+        cpu: 10m
+        memory: 200Mi
+      requests:
+        cpu: 10m
+        memory: 20Mi
+prometheus:
+  prometheusSpec:
+    resources:
+      limits:
+        cpu: 250m
+        memory: 2000Mi
+      requests:
+        cpu: 50m
+        memory: 1300Mi
+server:
+  persistentVolume:
+    enabled: false
+  global:
+    scrape_interval: 5s
+    scrape_timeout: 5s
+  resources:
+    limits:
+      cpu: 250m
+      memory: 2000Mi
+    requests:
+      cpu: 50m
+      memory: 1300Mi

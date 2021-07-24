@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-ebs
+spec:
+  containers:
+  - image: busybox
+    name: test-ebs
+    command: [ "tail","-f","/dev/null"]
+    volumeMounts:
+    - mountPath: "/app/mnt"
+      name: test-volume
+  volumes:
+  - name: test-volume
+    # This AWS EBS volume must already exist.
+    awsElasticBlockStore:
+      volumeID: vol-0724beb76b74d22c8
+      fsType: ext4

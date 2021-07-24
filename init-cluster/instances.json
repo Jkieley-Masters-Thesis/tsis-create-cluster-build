@@ -1,0 +1,338 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-07dd19a7900a1f049",
+                    "InstanceId": "i-0c3fce5af5c699bff",
+                    "InstanceType": "t2.medium",
+                    "KeyName": "kubernetes.myfirstcluster.k8s.local-f0:f4:1f:1f:87:59:11:60:4e:55:24:9d:1d:66:94:1b",
+                    "LaunchTime": "2020-12-03T02:57:04+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-172-20-50-34.us-west-2.compute.internal",
+                    "PrivateIpAddress": "172.20.50.34",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-18-236-126-106.us-west-2.compute.amazonaws.com",
+                    "PublicIpAddress": "18.236.126.106",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0c11c6de27ca6571d",
+                    "VpcId": "vpc-0a6dcc5b2b8446fa9",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2020-12-03T02:57:05+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-02997da00363f2686"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdu",
+                            "Ebs": {
+                                "AttachTime": "2020-12-03T03:00:23+00:00",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-0d71543bbeeffd210"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/xvdv",
+                            "Ebs": {
+                                "AttachTime": "2020-12-03T03:00:23+00:00",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-0e73d86a5c2477f62"
+                            }
+                        }
+                    ],
+                    "ClientToken": "9555d89a-2071-82e7-bbe5-44f564be66a1",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::098060242207:instance-profile/masters.myfirstcluster.k8s.local",
+                        "Id": "AIPARNVGYRUPRVPMMPMO5"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-18-236-126-106.us-west-2.compute.amazonaws.com",
+                                "PublicIp": "18.236.126.106"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2020-12-03T02:57:04+00:00",
+                                "AttachmentId": "eni-attach-0d1d3410d1ddc7928",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "masters.myfirstcluster.k8s.local",
+                                    "GroupId": "sg-0043eb53222433511"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "06:15:79:7a:1c:4d",
+                            "NetworkInterfaceId": "eni-04a83a30d8d7e2a9d",
+                            "OwnerId": "098060242207",
+                            "PrivateDnsName": "ip-172-20-50-34.us-west-2.compute.internal",
+                            "PrivateIpAddress": "172.20.50.34",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-18-236-126-106.us-west-2.compute.amazonaws.com",
+                                        "PublicIp": "18.236.126.106"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-20-50-34.us-west-2.compute.internal",
+                                    "PrivateIpAddress": "172.20.50.34"
+                                }
+                            ],
+                            "SourceDestCheck": false,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0c11c6de27ca6571d",
+                            "VpcId": "vpc-0a6dcc5b2b8446fa9",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "masters.myfirstcluster.k8s.local",
+                            "GroupId": "sg-0043eb53222433511"
+                        }
+                    ],
+                    "SourceDestCheck": false,
+                    "Tags": [
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "master-us-west-2a.masters.myfirstcluster.k8s.local"
+                        },
+                        {
+                            "Key": "k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup",
+                            "Value": "master-us-west-2a"
+                        },
+                        {
+                            "Key": "KubernetesCluster",
+                            "Value": "myfirstcluster.k8s.local"
+                        },
+                        {
+                            "Key": "kops.k8s.io/instancegroup",
+                            "Value": "master-us-west-2a"
+                        },
+                        {
+                            "Key": "k8s.io/role/master",
+                            "Value": "1"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "master-us-west-2a.masters.myfirstcluster.k8s.local"
+                        },
+                        {
+                            "Key": "kubernetes.io/cluster/myfirstcluster.k8s.local",
+                            "Value": "owned"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 2,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled"
+                    }
+                }
+            ],
+            "OwnerId": "098060242207",
+            "RequesterId": "903220451833",
+            "ReservationId": "r-0ca78fccc6a23eefa"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-07dd19a7900a1f049",
+                    "InstanceId": "i-07767ba43f6a90eee",
+                    "InstanceType": "c5.xlarge",
+                    "KeyName": "kubernetes.myfirstcluster.k8s.local-f0:f4:1f:1f:87:59:11:60:4e:55:24:9d:1d:66:94:1b",
+                    "LaunchTime": "2020-12-03T02:57:04+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-172-20-55-159.us-west-2.compute.internal",
+                    "PrivateIpAddress": "172.20.55.159",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-54-188-187-210.us-west-2.compute.amazonaws.com",
+                    "PublicIpAddress": "54.188.187.210",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0c11c6de27ca6571d",
+                    "VpcId": "vpc-0a6dcc5b2b8446fa9",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2020-12-03T02:57:05+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-04fa8ae59c80b91a8"
+                            }
+                        }
+                    ],
+                    "ClientToken": "4fc5d89a-206f-59fd-1b53-3c891c76a530",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::098060242207:instance-profile/nodes.myfirstcluster.k8s.local",
+                        "Id": "AIPARNVGYRUPSA2ZZ7WBC"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-54-188-187-210.us-west-2.compute.amazonaws.com",
+                                "PublicIp": "54.188.187.210"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2020-12-03T02:57:04+00:00",
+                                "AttachmentId": "eni-attach-02718966e1d37ab81",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "nodes.myfirstcluster.k8s.local",
+                                    "GroupId": "sg-04a55af01c8fd82a8"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "06:10:71:20:ae:11",
+                            "NetworkInterfaceId": "eni-04e7071af02fffab5",
+                            "OwnerId": "098060242207",
+                            "PrivateDnsName": "ip-172-20-55-159.us-west-2.compute.internal",
+                            "PrivateIpAddress": "172.20.55.159",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-54-188-187-210.us-west-2.compute.amazonaws.com",
+                                        "PublicIp": "54.188.187.210"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-20-55-159.us-west-2.compute.internal",
+                                    "PrivateIpAddress": "172.20.55.159"
+                                }
+                            ],
+                            "SourceDestCheck": false,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0c11c6de27ca6571d",
+                            "VpcId": "vpc-0a6dcc5b2b8446fa9",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "nodes.myfirstcluster.k8s.local",
+                            "GroupId": "sg-04a55af01c8fd82a8"
+                        }
+                    ],
+                    "SourceDestCheck": false,
+                    "Tags": [
+                        {
+                            "Key": "KubernetesCluster",
+                            "Value": "myfirstcluster.k8s.local"
+                        },
+                        {
+                            "Key": "k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup",
+                            "Value": "nodes"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "nodes.myfirstcluster.k8s.local"
+                        },
+                        {
+                            "Key": "kubernetes.io/cluster/myfirstcluster.k8s.local",
+                            "Value": "owned"
+                        },
+                        {
+                            "Key": "kops.k8s.io/instancegroup",
+                            "Value": "nodes"
+                        },
+                        {
+                            "Key": "k8s.io/role/node",
+                            "Value": "1"
+                        },
+                        {
+                            "Key": "aws:autoscaling:groupName",
+                            "Value": "nodes.myfirstcluster.k8s.local"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 2,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled"
+                    }
+                }
+            ],
+            "OwnerId": "098060242207",
+            "RequesterId": "903220451833",
+            "ReservationId": "r-0632e539d9a22a289"
+        }
+    ]
+}
